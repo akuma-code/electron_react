@@ -1,5 +1,5 @@
 {
-  "name": "frontend",
+  "name": "electron_react",
   "version": "0.1.0",
   "private": true,
   "main": "build/electron/main.js",
@@ -19,21 +19,21 @@
     "electron-reload": "^2.0.0-alpha.1"
   },
   "devDependencies": {
-    "@testing-library/jest-dom": "^5.16.5",
-    "@testing-library/react": "^14.0.0",
-    "@testing-library/user-event": "^14.4.3",
-    "@types/electron-devtools-installer": "^2.2.2",
-    "@types/jest": "^29.4.0",
-    "@types/node": "^16.18.16",
-    "@types/react": "^18.0.28",
-    "@types/react-dom": "^18.0.11",
+    "@testing-library/jest-dom": "^6.2.0",
+    "@testing-library/react": "^14.1.2",
+    "@testing-library/user-event": "^14.5.2",
+    "@types/electron-devtools-installer": "^2.2.5",
+    "@types/jest": "^29.5.11",
+    "@types/node": "^20.11.0",
+    "@types/react": "^18.2.47",
+    "@types/react-dom": "^18.2.18",
     "cross-env": "^7.0.3",
-    "concurrently": "^8.0.1",
-    "electron": "^24.1.2",
-    "electron-builder": "^24.0.0",
+    "concurrently": "^8.2.2",
+    "electron": "^28.1.3",
+    "electron-builder": "^24.11.0",
     "electron-is-dev": "^2.0.0",
-    "typescript": "^5.0.4",
-    "wait-on": "^7.0.1"
+    "typescript": "^5.3.3",
+    "wait-on": "^7.2.0"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -47,7 +47,7 @@
     "electron:dist": "yarn build && tsc -p electron && electron-builder --mac --dir"
   },
   "build": {
-    "productName": "productName",
+    "productName": "react_electron_app",
     "mac": {
       "target": {
         "target": "default",
@@ -82,5 +82,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "description": "<div align=\"center\">\r <img alt=\"Electron React Crossover Banner\" src=\"./assets/logo.png\" width=\"500\" />\r </div>\r <br />\r The boilerplate typescript template to get started creating Cross-platform Desktop Apps with Electron and React.\r <br />\r <br />",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
